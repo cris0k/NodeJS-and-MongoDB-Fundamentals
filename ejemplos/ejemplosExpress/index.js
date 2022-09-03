@@ -13,7 +13,7 @@ const app = express();
 app.use((req, res, next) => {
     console.log('He recibido una peticion de tipo', req.method, 'a', req.path);
     next();
-});
+}); // app.use() hace accion da igual la peticion que tenga post, get..
 
 // añadir una ruta (ruta http)
 
